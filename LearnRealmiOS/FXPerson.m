@@ -8,6 +8,7 @@
 
 #import "FXPerson.h"
 #import "FXFamily.h"
+#import "FXCar.h"
 
 @implementation FXPerson
 
@@ -31,13 +32,15 @@
     return @[@"tmp"];
 }
 
-- (instancetype)initWithName:(NSString*)name age:(NSInteger)age family:(FXFamily*)family {
+- (instancetype)initWithName:(NSString*)name age:(NSInteger)age family:(FXFamily*)family car:(FXCar*)car {
     self = [super init];
     if (self) {
         _name   = name;
         _age    = age;
         _family = family;
         [_family.members addObject:self];
+        _car    = car;
+        [_car.owers addObject:self];
     }
     return self;
 }

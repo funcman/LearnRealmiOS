@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3105360C1BD4CABA00C770E7 /* FXCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3105360B1BD4CABA00C770E7 /* FXCar.m */; settings = {ASSET_TAGS = (); }; };
 		31A5B4B41BD0B6B900BD4D8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A5B4B31BD0B6B900BD4D8E /* main.m */; };
 		31A5B4B71BD0B6B900BD4D8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A5B4B61BD0B6B900BD4D8E /* AppDelegate.m */; };
 		31A5B4BA1BD0B6B900BD4D8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A5B4B91BD0B6B900BD4D8E /* ViewController.m */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		16E7492BF0FF45817D6DB9EC /* libPods-LearnRealmiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnRealmiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3105360A1BD4CABA00C770E7 /* FXCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCar.h; sourceTree = "<group>"; };
+		3105360B1BD4CABA00C770E7 /* FXCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCar.m; sourceTree = "<group>"; };
 		31A5B4AF1BD0B6B900BD4D8E /* LearnRealmiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRealmiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A5B4B31BD0B6B900BD4D8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31A5B4B51BD0B6B900BD4D8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				31FB20981BD0E59A00C1C80F /* FXPerson.m */,
 				31FB209A1BD0E6E600C1C80F /* FXFamily.h */,
 				31FB209B1BD0E6E600C1C80F /* FXFamily.m */,
+				3105360A1BD4CABA00C770E7 /* FXCar.h */,
+				3105360B1BD4CABA00C770E7 /* FXCar.m */,
 			);
 			path = LearnRealmiOS;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3105360C1BD4CABA00C770E7 /* FXCar.m in Sources */,
 				31A5B4BA1BD0B6B900BD4D8E /* ViewController.m in Sources */,
 				31FB209C1BD0E6E600C1C80F /* FXFamily.m in Sources */,
 				31A5B4B71BD0B6B900BD4D8E /* AppDelegate.m in Sources */,

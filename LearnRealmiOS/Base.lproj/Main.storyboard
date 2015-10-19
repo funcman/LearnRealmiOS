@@ -17,11 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CHo-w8-pTn">
-                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <rect key="frame" x="267" y="275" width="66" height="51"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVO-BM-DmA">
-                                        <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="51"/>
                                         <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="RUN"/>
                                         <connections>
                                             <action selector="run:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLa-W7-tIP"/>

@@ -7,10 +7,7 @@
 //
 
 #import <Realm/Realm.h>
-
-@class FXPerson;
-
-RLM_ARRAY_TYPE(FXPerson)
+#import "FXPerson.h"
 
 @interface FXFamily : RLMObject
 

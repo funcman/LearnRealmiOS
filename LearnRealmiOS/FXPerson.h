@@ -9,15 +9,21 @@
 #import <Realm/Realm.h>
 
 @class FXFamily;
+@class FXCar;
 
 @interface FXPerson : RLMObject
 
-@property NSString* name;
-@property NSInteger age;
-@property NSInteger tmp;
-
 @property FXFamily* family;
 
-- (instancetype)initWithName:(NSString*)name age:(NSInteger)age family:(FXFamily*)family;
+@property NSString* name;
+@property NSInteger age;
+
+@property FXCar*    car;
+
+@property NSInteger tmp;
+
+- (instancetype)initWithName:(NSString*)name age:(NSInteger)age family:(FXFamily*)family car:(FXCar*)car;
 
 @end
+
+RLM_ARRAY_TYPE(FXPerson)
