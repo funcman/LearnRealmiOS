@@ -12,9 +12,12 @@
 
 @interface FXPerson : RLMObject
 
-@property(nonatomic, strong)    NSString*   name;
-@property(nonatomic, assign)    NSInteger   age;
+@property NSString* name;
+@property NSInteger age;
+@property NSInteger tmp;
 
-@property(nonatomic, strong)    FXFamily*   family;
+@property FXFamily* family;
+
+- (instancetype)initWithName:(NSString*)name age:(NSInteger)age family:(FXFamily*)family;
 
 @end

@@ -27,33 +27,22 @@
 }
 
 - (IBAction)run:(id)sender {
-    FXPerson* father    = [[FXPerson alloc]init];
-    FXPerson* mother    = [[FXPerson alloc]init];
-    FXPerson* son       = [[FXPerson alloc]init];
     FXFamily* family    = [[FXFamily alloc]init];
-
-    father.name = @"Peter";
-    mother.name = @"Mary";
-    son.name    = @"Bill";
-
-    father.age  = 53;
-    mother.age  = 45;
-    son.age     = 20;
-
     family.name = @"Ho";
 
-    // many to one
-    father.family   = family;
-    mother.family   = family;
-    son.family      = family;
-    // one to many
-    [family.members addObject:father];
-    [family.members addObject:mother];
-    [family.members addObject:son];
+    FXPerson* father    = [[FXPerson alloc]initWithName:@"Peter"
+                                                    age:53
+                                                 family:family];;
+    FXPerson* mother    = [[FXPerson alloc]initWithName:@"Mary"
+                                                    age:45
+                                                 family:family];
+    FXPerson* son       = [[FXPerson alloc]initWithName:@"Bill"
+                                                    age:20
+                                                 family:family];
 
     RLMRealm* realm = [RLMRealm defaultRealm];
     [realm beginWriteTransaction];
-    [realm addObject:family];
+    [realm addObject:father];
     [realm addObject:mother];
     [realm addObject:son];
     [realm addObject:family];

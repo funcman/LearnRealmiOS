@@ -14,7 +14,7 @@ RLM_ARRAY_TYPE(FXPerson)
 
 @interface FXFamily : RLMObject
 
-@property(nonatomic, strong)    NSString*           name;
-@property(nonatomic, strong)    RLMArray<FXPerson>* members;
+@property NSString*             name;
+@property RLMArray<FXPerson>*   members;
 
 @end
